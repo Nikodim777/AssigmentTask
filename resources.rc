@@ -1,0 +1,122 @@
+#include "resources.h"
+
+#define VK_COMMA 0xBC
+#define VK_PERIOD 0xBE
+#define VK_ALEFT 0x25
+#define VK_ATOP 0x26
+#define VK_ARIGHT 0x27
+#define VK_ABOTTOM 0x28
+#define VK_N 0x4E
+#define VK_E 0x45
+#define VK_L 0x4C
+#define VK_S 0x53
+#define VK_C 0x43
+#define VK_Q 0x51
+#define VK_M 0x4D
+#define VK_D 0x44
+#define VK_T 0x54
+#define VK_H 0x48
+
+VERINFO VERSIONINFO
+    FILEVERSION 0,0,0,1
+    PRODUCTVERSION 0,0,0,1
+    FILEOS VOS__WINDOWS32
+    FILETYPE VFT_APP
+    {
+        BLOCK "StringFileInfo"
+        {
+            BLOCK "041904E3"
+            {
+                VALUE "CompanyName", "Лев"
+                VALUE "FileDescription", "Учебная САПР для решения задач назначения"
+                VALUE "FileVersion", "1.0"
+                VALUE "InternalName", "УСАПР для задач назначения"
+                VALUE "LegalCopyright", "GPL"
+                VALUE "OriginalFileName", "Назначалка"
+                VALUE "ProductName", "Назначалка"
+                VALUE "ProductVersion", "1.0"
+            }
+        }
+        BLOCK "VarFileInfo"
+        {
+            VALUE "Translation", 0x0419, 0x04E3
+        }
+    }
+
+TOOLDLG DIALOGEX 100, 100, 300, 100
+    STYLE WS_POPUP | DS_MODALFRAME
+    CAPTION "Настройки"
+    BEGIN
+      CONTROL "Подробность решения:", IDC_LB1TOOLDLG, "STATIC", 0,                                                                 10, 10, 100, 10
+      CONTROL "Пошагово", IDC_RB1TOOLDLG, "BUTTON", BS_RADIOBUTTON,                                                         10, 30, 50, 10
+      CONTROL "Сразу", IDC_RB2TOOLDLG, "BUTTON", BS_RADIOBUTTON,                                                             10, 50, 50, 10
+      CONTROL "Представление:", IDC_LB2TOOLDLG, "STATIC", 0,                                                                        125, 10, 60, 10
+      CONTROL "Граф", IDC_RB3TOOLDLG, "BUTTON", BS_RADIOBUTTON,                                                             125, 30, 50, 10
+      CONTROL "Матрица", IDC_RB4TOOLDLG, "BUTTON", BS_RADIOBUTTON,                                                          125, 50, 50, 10
+      CONTROL "Алгоритмы:", IDC_LB3TOOLDLG, "STATIC", 0,                                                                            220, 10, 50, 10
+      CONTROL "Венгерский", IDC_RB5TOOLDLG, "BUTTON", BS_RADIOBUTTON,                                                         220, 25, 70, 10
+      CONTROL "МаксиМин", IDC_RB6TOOLDLG, "BUTTON", BS_RADIOBUTTON,                                                         220, 40, 70, 10
+      CONTROL "Наименьший риск", IDC_RB7TOOLDLG, "BUTTON", BS_RADIOBUTTON,                                                 220, 55, 70, 10
+      CONTROL "Ок", IDC_OKTOOLDLG, "BUTTON", WS_CLIPSIBLINGS | BS_PUSHBUTTON | BS_OWNERDRAW,                    100, 70, 50, 20
+      CONTROL "Отмена", IDC_CANCELTOOLDLG, "BUTTON", WS_CLIPSIBLINGS | BS_PUSHBUTTON | BS_OWNERDRAW,       160, 70, 50, 20
+    END
+
+VERTEXDLG DIALOGEX 0, 0, 150, 80
+    STYLE WS_POPUP | DS_MODALFRAME | DS_CENTER
+    CAPTION "Параметры вершины"
+    BEGIN
+        LTEXT "Надпись:", MAXDWORD,                                      10, 10, 60, 10
+        EDITTEXT IDC_EDITVERTEXDLG,                                     10, 30, 60, 10, ES_LEFT | ES_AUTOHSCROLL
+        LTEXT "Группа:", MAXDWORD,                                      70, 10, 60, 10
+        RADIOBUTTON "Назначаемые", IDC_RB1VERTEXDLG,          70, 25, 60, 10
+        RADIOBUTTON "Места", IDC_RB2VERTEXDLG,                  70, 40, 60, 10
+        DEFPUSHBUTTON "Ок", IDC_OKVERTEXDLG,                     55, 55, 40, 20, BS_OWNERDRAW
+    END
+
+ACCELSET ACCELERATORS
+{
+    VK_COMMA, ZOOMOUT_AC, VIRTKEY
+    VK_COMMA, ZOOMOUTE_AC, VIRTKEY, SHIFT
+    VK_PERIOD, ZOOMIN_AC, VIRTKEY
+    VK_PERIOD, ZOOMINE_AC, VIRTKEY, SHIFT
+    VK_ALEFT, SHIFTLEFT_AC, VIRTKEY
+    VK_ATOP, SHIFTTOP_AC, VIRTKEY
+    VK_ARIGHT, SHIFTRIGHT_AC, VIRTKEY
+    VK_ABOTTOM, SHIFTBOTTOM_AC, VIRTKEY
+    VK_N, CREATE_MI, VIRTKEY, ALT
+    VK_E, EDIT_MI, VIRTKEY, ALT
+    VK_L, LOAD_MI, VIRTKEY, ALT
+    VK_S, SAVE_MI, VIRTKEY, ALT
+    VK_C, CLOSE_MI, VIRTKEY, ALT
+    VK_Q, EXIT_MI, VIRTKEY, ALT
+    VK_M, SW_MANAGE_MI, VIRTKEY, ALT
+    VK_D, SW_DRAW_MI, VIRTKEY, ALT
+    VK_T, TOOL_MI, VIRTKEY, ALT
+    VK_H, HOTKEY_MI, VIRTKEY, ALT
+}
+
+MENUSET MENU
+{
+    POPUP "Файл"
+    {
+        MENUITEM "Создать пример", CREATE_MI
+        MENUITEM "Редактировать пример", EDIT_MI, GRAYED
+        MENUITEM "Удалить пример", DELETE_MI
+        MENUITEM "Загрузить пример", LOAD_MI
+        MENUITEM "Сохранить пример", SAVE_MI, GRAYED
+        MENUITEM "Сохранить пример как", SAVEAS_MI, GRAYED
+        MENUITEM "Закрыть пример", CLOSE_MI, GRAYED
+        MENUITEM "Выход", EXIT_MI
+    }
+    POPUP "Вид"
+    {
+        MENUITEM "Окно управления", SW_MANAGE_MI
+        MENUITEM "Окно рисования", SW_DRAW_MI
+    }
+    MENUITEM "Настройки", TOOL_MI
+    POPUP "Помощь"
+    {
+        MENUITEM "О программе", ABOUT_MI
+        MENUITEM "Горячие клавиши", HOTKEY_MI
+    }
+}

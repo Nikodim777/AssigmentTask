@@ -1,0 +1,181 @@
+# depslib dependency file v1.0
+1608554757 source:d:\Данные\Учёба\4 курс\assigmenttask\main.cpp
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<tchar.h>
+	<windows.h>
+	<commctrl.h>
+	"drawToolWnd.h"
+	"Drawer.h"
+	"Example.h"
+	"manageToolWnd.h"
+	"resources.h"
+	"tool.h"
+
+1608554728 d:\Данные\Учёба\4 курс\assigmenttask\tool.h
+
+1608554728 source:d:\Данные\Учёба\4 курс\assigmenttask\tool.cpp
+	<tchar.h>
+	<windows.h>
+	<windowsx.h>
+	<commctrl.h>
+	"resources.h"
+	"tool.h"
+	"hoverableWindow.h"
+
+1607517099 d:\Данные\Учёба\4 курс\assigmenttask\resources.h
+	<windows.h>
+
+1607519556 source:d:\Данные\Учёба\4 курс\assigmenttask\resources.rc
+	"resources.h"
+
+1601916285 d:\Данные\Учёба\4 курс\assigmenttask\managewnd.h
+
+1605183999 source:d:\Данные\Учёба\4 курс\assigmenttask\managewnd.cpp
+	<stdio.h>
+	<tchar.h>
+	<windows.h>
+	<windowsx.h>
+	<commctrl.h>
+	"manageWnd.h"
+	"hoverableWindow.h"
+
+1605635441 source:d:\Данные\Учёба\4 курс\assigmenttask\drawwnd.cpp
+	<stdio.h>
+	<tchar.h>
+	<time.h>
+	<windows.h>
+	<windowsx.h>
+	<commctrl.h>
+	"drawWnd.h"
+	"hoverableWindow.h"
+
+1604512577 d:\Данные\Учёба\4 курс\assigmenttask\drawwnd.h
+
+1606257194 d:\Данные\Учёба\4 курс\assigmenttask\hoverablewindow.h
+
+1606257194 source:d:\Данные\Учёба\4 курс\assigmenttask\hoverablewindow.cpp
+	<stdio.h>
+	<time.h>
+	<windows.h>
+	<windowsx.h>
+	<commctrl.h>
+	"hoverableWindow.h"
+
+1607958405 source:d:\Данные\Учёба\4 курс\assigmenttask\example.cpp
+	"Example.h"
+
+1607958405 d:\Данные\Учёба\4 курс\assigmenttask\example.h
+	<stdio.h>
+	<tchar.h>
+	<vector>
+	<windows.h>
+	"resources.h"
+
+1605553750 d:\Данные\Учёба\4 курс\assigmenttask\stepescort.h
+	<tchar.h>
+	"ActionInfo.h"
+
+1607929558 d:\Данные\Учёба\4 курс\assigmenttask\actioninfo.h
+	<tchar.h>
+
+1607969144 d:\Данные\Учёба\4 курс\assigmenttask\drawer.h
+	<algorithm>
+	<math.h>
+	<tchar.h>
+	<vector>
+	<windows.h>
+	<windowsx.h>
+	"resources.h"
+	"drawToolWnd.h"
+	"Example.h"
+	"StepInfo.h"
+
+1607969672 source:d:\Данные\Учёба\4 курс\assigmenttask\drawer.cpp
+	"Drawer.h"
+
+1608123200 source:d:\Данные\Учёба\4 курс\assigmenttask\managetoolwnd.cpp
+	<stdio.h>
+	<tchar.h>
+	<windows.h>
+	<windowsx.h>
+	<commctrl.h>
+	"Example.h"
+	"MaxiMinAlg.h"
+	"StepInfo.h"
+	"resources.h"
+	"manageToolWnd.h"
+	"hoverableWindow.h"
+	"tooltipcreator.h"
+
+1608044090 d:\Данные\Учёба\4 курс\assigmenttask\managetoolwnd.h
+
+1608555297 source:d:\Данные\Учёба\4 курс\assigmenttask\drawtoolwnd.cpp
+	<stdio.h>
+	<tchar.h>
+	<windows.h>
+	<windowsx.h>
+	"resources.h"
+	"vertexdlg.h"
+	"drawToolWnd.h"
+	"hoverableWindow.h"
+	"tooltipcreator.h"
+
+1608555434 d:\Данные\Учёба\4 курс\assigmenttask\drawtoolwnd.h
+
+1606482547 source:d:\Данные\Учёба\4 курс\assigmenttask\resources.cpp
+	"resources.h"
+
+1606488662 d:\Данные\Учёба\4 курс\assigmenttask\tooltipcreator.h
+	"windows.h"
+	<commctrl.h>
+
+1606488662 source:d:\Данные\Учёба\4 курс\assigmenttask\tooltipcreator.cpp
+	"tooltipcreator.h"
+
+1608555315 d:\Данные\Учёба\4 курс\assigmenttask\vertexdlg.h
+
+1607519557 source:d:\Данные\Учёба\4 курс\assigmenttask\vertexdlg.cpp
+	<tchar.h>
+	<windows.h>
+	<windowsx.h>
+	<commctrl.h>
+	"resources.h"
+	"vertexdlg.h"
+	"hoverableWindow.h"
+
+1607855447 source:d:\Данные\Учёба\4 курс\assigmenttask\assigntaskalgorithm.cpp
+	"AssignTaskAlgorithm.h"
+
+1608043538 d:\Данные\Учёба\4 курс\assigmenttask\assigntaskalgorithm.h
+	<algorithm>
+	<limits.h>
+	<stdlib.h>
+	<vector>
+	<tchar.h>
+	<windows.h>
+	"Example.h"
+	"StepInfo.h"
+	"tool.h"
+
+1607947061 source:d:\Данные\Учёба\4 курс\assigmenttask\assigntasksolver.cpp
+	"AssignTaskSolver.h"
+
+1607932109 d:\Данные\Учёба\4 курс\assigmenttask\assigntasksolver.h
+	<tchar.h>
+	<windows.h>
+	"StepInfo.h"
+	"AssignTaskAlgorithm.h"
+	"tool.h"
+
+1608123199 d:\Данные\Учёба\4 курс\assigmenttask\maximinalg.h
+	<stdlib.h>
+	"AssignTaskAlgorithm.h"
+
+1608123549 source:d:\Данные\Учёба\4 курс\assigmenttask\maximinalg.cpp
+	"MaxiMinAlg.h"
+
+1608123429 d:\Данные\Учёба\4 курс\assigmenttask\stepinfo.h
+	<tchar.h>
+

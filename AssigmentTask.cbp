@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AssigmentTask" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/AssigmentTask" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-std=gnu++11" />
+					<Add option="-m32" />
+					<Add option="-DTEST_EXAMPLE_LOAD" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Os" />
+			<Add option="-Wall" />
+			<Add option="-std=gnu++11" />
+			<Add option="-m32" />
+			<Add option="-DUNICODE" />
+			<Add option="-D_UNICODE" />
+		</Compiler>
+		<Linker>
+			<Add option="-s" />
+			<Add option="-m32" />
+			<Add library="gdi32" />
+			<Add library="user32" />
+			<Add library="kernel32" />
+			<Add library="comctl32" />
+		</Linker>
+		<Unit filename="AssignTaskAlgorithm.h" />
+		<Unit filename="Drawer.cpp" />
+		<Unit filename="Drawer.h" />
+		<Unit filename="Example.cpp" />
+		<Unit filename="Example.h" />
+		<Unit filename="MaxiMinAlg.cpp" />
+		<Unit filename="MaxiMinAlg.h" />
+		<Unit filename="StepInfo.h" />
+		<Unit filename="drawToolWnd.cpp" />
+		<Unit filename="drawToolWnd.h" />
+		<Unit filename="hoverableWindow.cpp" />
+		<Unit filename="hoverableWindow.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="manageToolWnd.cpp" />
+		<Unit filename="manageToolWnd.h" />
+		<Unit filename="resources.cpp" />
+		<Unit filename="resources.h" />
+		<Unit filename="resources.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="tool.cpp" />
+		<Unit filename="tool.h" />
+		<Unit filename="tooltipcreator.cpp" />
+		<Unit filename="tooltipcreator.h" />
+		<Unit filename="vertexdlg.cpp" />
+		<Unit filename="vertexdlg.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
